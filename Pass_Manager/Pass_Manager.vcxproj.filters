@@ -55,13 +55,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="icon1.ico">
+    <Image Include="..\Icons\locked.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="..\..\..\..\Downloads\Temp\locked.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="..\..\..\..\Downloads\Temp\locked_R6b_icon.ico">
+    <Image Include="..\Icons\locked_R6b_icon.ico">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

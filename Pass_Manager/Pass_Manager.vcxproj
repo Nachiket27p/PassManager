@@ -183,9 +183,8 @@
     <ClCompile Include="SharedData.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\..\Downloads\Temp\locked.png" />
-    <Image Include="..\..\..\..\Downloads\Temp\locked_R6b_icon.ico" />
-    <Image Include="icon1.ico" />
+    <Image Include="..\Icons\locked.png" />
+    <Image Include="..\Icons\locked_R6b_icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Resource.rc" />
