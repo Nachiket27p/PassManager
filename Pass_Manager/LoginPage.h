@@ -24,6 +24,7 @@ namespace PassManager {
 				//
 				//TODO: Add the constructor code here
 				//
+				this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Dpi;
 			}
 
 		protected:
@@ -84,7 +85,8 @@ namespace PassManager {
 			this->LoginPage_Key_Lbl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->LoginPage_Key_Lbl->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->LoginPage_Key_Lbl->Location = System::Drawing::Point(80, 60);
+			this->LoginPage_Key_Lbl->Location = System::Drawing::Point(98, 72);
+			this->LoginPage_Key_Lbl->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->LoginPage_Key_Lbl->Name = L"LoginPage_Key_Lbl";
 			this->LoginPage_Key_Lbl->Size = System::Drawing::Size(60, 29);
 			this->LoginPage_Key_Lbl->TabIndex = 0;
@@ -98,10 +100,11 @@ namespace PassManager {
 			this->LogInPage_Key_Txt->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 16, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->LogInPage_Key_Txt->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->LogInPage_Key_Txt->Location = System::Drawing::Point(148, 56);
+			this->LogInPage_Key_Txt->Location = System::Drawing::Point(181, 67);
+			this->LogInPage_Key_Txt->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->LogInPage_Key_Txt->Name = L"LogInPage_Key_Txt";
 			this->LogInPage_Key_Txt->PasswordChar = '*';
-			this->LogInPage_Key_Txt->Size = System::Drawing::Size(400, 37);
+			this->LogInPage_Key_Txt->Size = System::Drawing::Size(489, 37);
 			this->LogInPage_Key_Txt->TabIndex = 1;
 			this->LogInPage_Key_Txt->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &LoginPage::LogInPage_Key_Txt_KeyDown);
 			// 
@@ -114,9 +117,10 @@ namespace PassManager {
 			this->LogIn_Enter_Btn->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->LogIn_Enter_Btn->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->LogIn_Enter_Btn->Location = System::Drawing::Point(560, 56);
+			this->LogIn_Enter_Btn->Location = System::Drawing::Point(684, 67);
+			this->LogIn_Enter_Btn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->LogIn_Enter_Btn->Name = L"LogIn_Enter_Btn";
-			this->LogIn_Enter_Btn->Size = System::Drawing::Size(100, 37);
+			this->LogIn_Enter_Btn->Size = System::Drawing::Size(122, 44);
 			this->LogIn_Enter_Btn->TabIndex = 2;
 			this->LogIn_Enter_Btn->Text = L"Enter";
 			this->LogIn_Enter_Btn->UseVisualStyleBackColor = false;
@@ -131,9 +135,10 @@ namespace PassManager {
 			this->LoginPage_Minimize_Btn->FlatAppearance->BorderSize = 0;
 			this->LoginPage_Minimize_Btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->LoginPage_Minimize_Btn->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->LoginPage_Minimize_Btn->Location = System::Drawing::Point(675, 1);
+			this->LoginPage_Minimize_Btn->Location = System::Drawing::Point(825, 1);
+			this->LoginPage_Minimize_Btn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->LoginPage_Minimize_Btn->Name = L"LoginPage_Minimize_Btn";
-			this->LoginPage_Minimize_Btn->Size = System::Drawing::Size(32, 32);
+			this->LoginPage_Minimize_Btn->Size = System::Drawing::Size(39, 38);
 			this->LoginPage_Minimize_Btn->TabIndex = 4;
 			this->LoginPage_Minimize_Btn->UseVisualStyleBackColor = false;
 			this->LoginPage_Minimize_Btn->Click += gcnew System::EventHandler(this, &LoginPage::LoginPage_Minimize_Btn_Click);
@@ -147,20 +152,21 @@ namespace PassManager {
 			this->LoginPage_Close_Btn->FlatAppearance->BorderSize = 0;
 			this->LoginPage_Close_Btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->LoginPage_Close_Btn->ForeColor = System::Drawing::Color::WhiteSmoke;
-			this->LoginPage_Close_Btn->Location = System::Drawing::Point(707, 1);
+			this->LoginPage_Close_Btn->Location = System::Drawing::Point(864, 1);
+			this->LoginPage_Close_Btn->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->LoginPage_Close_Btn->Name = L"LoginPage_Close_Btn";
-			this->LoginPage_Close_Btn->Size = System::Drawing::Size(32, 32);
+			this->LoginPage_Close_Btn->Size = System::Drawing::Size(39, 38);
 			this->LoginPage_Close_Btn->TabIndex = 5;
 			this->LoginPage_Close_Btn->UseVisualStyleBackColor = false;
 			this->LoginPage_Close_Btn->Click += gcnew System::EventHandler(this, &LoginPage::LoginPage_Close_Btn_Click);
 			// 
 			// LoginPage
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			this->AutoScaleDimensions = System::Drawing::SizeF(11, 24);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)), static_cast<System::Int32>(static_cast<System::Byte>(37)),
 				static_cast<System::Int32>(static_cast<System::Byte>(43)));
-			this->ClientSize = System::Drawing::Size(740, 150);
+			this->ClientSize = System::Drawing::Size(904, 180);
 			this->Controls->Add(this->LoginPage_Close_Btn);
 			this->Controls->Add(this->LoginPage_Minimize_Btn);
 			this->Controls->Add(this->LogIn_Enter_Btn);
@@ -168,6 +174,7 @@ namespace PassManager {
 			this->Controls->Add(this->LoginPage_Key_Lbl);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::None;
 			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"LoginPage";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"LogIn";
