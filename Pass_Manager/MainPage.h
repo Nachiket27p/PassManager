@@ -64,6 +64,7 @@ namespace PassManager {
 		private: bool dragging;
 		private: Point offset;
 	private: System::Windows::Forms::TextBox^ MainPage_Notes_Txt;
+	private: System::Windows::Forms::Panel^ panel1;
 
 
 		private: const int CS_DropShadow = 0x20000;
@@ -102,6 +103,7 @@ namespace PassManager {
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->MainPage_Notes_Txt = (gcnew System::Windows::Forms::TextBox());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->SuspendLayout();
 			// 
 			// MainPage_Search_Txt
@@ -335,6 +337,13 @@ namespace PassManager {
 			this->MainPage_Notes_Txt->Size = System::Drawing::Size(400, 100);
 			this->MainPage_Notes_Txt->TabIndex = 12;
 			// 
+			// panel1
+			// 
+			this->panel1->Location = System::Drawing::Point(663, 107);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(44, 585);
+			this->panel1->TabIndex = 13;
+			// 
 			// MainPage
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
@@ -342,6 +351,7 @@ namespace PassManager {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)), static_cast<System::Int32>(static_cast<System::Byte>(37)),
 				static_cast<System::Int32>(static_cast<System::Byte>(43)));
 			this->ClientSize = System::Drawing::Size(740, 930);
+			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->MainPage_Notes_Txt);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
