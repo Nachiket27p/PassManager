@@ -118,7 +118,7 @@ namespace PassManager {
 			this->MainPage_Search_Txt->ForeColor = System::Drawing::Color::WhiteSmoke;
 			this->MainPage_Search_Txt->Location = System::Drawing::Point(319, 48);
 			this->MainPage_Search_Txt->Name = L"MainPage_Search_Txt";
-			this->MainPage_Search_Txt->Size = System::Drawing::Size(327, 32);
+			this->MainPage_Search_Txt->Size = System::Drawing::Size(327, 34);
 			this->MainPage_Search_Txt->TabIndex = 0;
 			this->MainPage_Search_Txt->KeyUp += gcnew System::Windows::Forms::KeyEventHandler(this, &MainPage::MainPage_Search_Txt_KeyUp);
 			// 
